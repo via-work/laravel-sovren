@@ -10,12 +10,12 @@ use Via\LaravelSovren\SovrenServiceProvider;
 
 class SovrenTest extends TestCase
 {
-    protected function getPackageProviders(): array
+    protected function getPackageProviders($app): array
     {
         return [SovrenServiceProvider::class];
     }
 
-    protected function getPackageAliases(): array
+    protected function getPackageAliases($app): array
     {
         return ['laravel-sovren' => Sovren::class];
     }
