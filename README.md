@@ -1,9 +1,9 @@
 # Laravel Sovren
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/via-work-work/laravel-sovren.svg?style=flat-square)](https://packagist.org/packages/via-work/laravel-sovren)
-[![Build Status](https://img.shields.io/travis/via-work/laravel-sovren/master.svg?style=flat-square)](https://travis-ci.org/via-work/laravel-sovren)
+[![Build Status](https://travis-ci.com/via-work/laravel-sovren.svg?token=QwJXKd8HHGkzaHzVxmjG&branch=master)](https://travis-ci.com/via-work/laravel-sovren)
 [![Quality Score](https://img.shields.io/scrutinizer/g/via-work/laravel-sovren.svg?style=flat-square)](https://scrutinizer-ci.com/g/via-work/laravel-sovren)
-[![Total Downloads](https://img.shields.io/packagist/dt/via-work/laravel-sovren.svg?style=flat-square)](https://packagist.org/packages/via-work/laravel-sovren)
+[![Total Downloads](https://img.shields.io/packagist/dm/via-work/laravel-sovren.svg?style=popout)](https://packagist.org/packages/via-work/laravel-sovren)
 
 Very simple package to use the Sovren API inside Laravel.
 
