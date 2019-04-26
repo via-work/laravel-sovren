@@ -11,6 +11,7 @@ Very simple package to use the Sovren API inside Laravel.
 
 You can install the package via composer:
 
+
 ```bash
 composer require via-work/laravel-sovren
 ```
