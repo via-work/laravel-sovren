@@ -10,7 +10,7 @@
             Content-Type: application/json
             Sovren-AccountId: '123456'
             Sovren-ServiceKey: /uH#d7CKUE2KTeBg^q
-            User-Agent: 'Laravel'
+            User-Agent: Laravel
     response:
         status:
             http_version: '1.1'
