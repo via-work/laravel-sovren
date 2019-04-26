@@ -10,7 +10,7 @@
             Content-Type: application/json
             Sovren-AccountId: '123456'
             Sovren-ServiceKey: /uH#d7CKUE2KTeBg^q
-            User-Agent: 'GuzzleHttp/6.3.3 curl/7.58.0 PHP/7.3.1-1+ubuntu18.04.1+deb.sury.org+1'
+            User-Agent: 'Laravel'
     response:
         status:
             http_version: '1.1'
