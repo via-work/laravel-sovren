@@ -29,6 +29,7 @@
     <php>
         <env name="SOVREN_ACCOUNT_ID" value="123456"/>
         <env name="SOVREN_SERVICE_KEY" value="/uH#d7CKUE2KTeBg^q"/>
+        <env name="SOVREN_BASE_URI" value="https://via.requestcatcher.com/test"/>
     </php>
     <listeners>
         <listener class="VCR\PHPUnit\TestListener\VCRTestListener" file="vendor/php-vcr/phpunit-testlistener-vcr/src/VCRTestListener.php" />
