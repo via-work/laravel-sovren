@@ -59,6 +59,7 @@ class SovrenTest extends TestCase
                 'Content-Type' => 'application/json',
                 'Sovren-AccountId' => '123456789',
                 'Sovren-ServiceKey' => config('sovren.sovren-servicekey'),
+                'User-Agent' => 'Laravel'
             ]
         ]);
 

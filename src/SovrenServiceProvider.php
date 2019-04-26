@@ -40,6 +40,7 @@ class SovrenServiceProvider extends ServiceProvider
                     'Content-Type' => 'application/json',
                     'Sovren-AccountId' => config('sovren.sovren-accountid'),
                     'Sovren-ServiceKey' => config('sovren.sovren-servicekey'),
+                    'User-Agent' => 'Laravel'
                 ]
             ]);
             return new Sovren($client);
