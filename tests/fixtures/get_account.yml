@@ -28,32 +28,3 @@
             Content-Length: '177'
             Connection: keep-alive
         body: '{"Info":{"Code":"Success","Message":"Successful transaction"},"Value":{"CreditsRemaining":9998.0,"CreditsUsed":2.0,"MaximumConcurrentRequests":10,"ExpirationDate":"2025/04/23"}}'
--
-    request:
-        method: GET
-        url: 'https://rest.resumeparsing.com/v9/account'
-        headers:
-            Host: rest.resumeparsing.com
-            Accept-Encoding: null
-            Accept: application/json
-            Content-Type: application/json
-            Sovren-AccountId: '123456'
-            Sovren-ServiceKey: /spetXSkK455vfFpWsQ28FiD3TTsNI0RewpAGwU1
-            User-Agent: 'GuzzleHttp/6.3.3 curl/7.58.0 PHP/7.3.1-1+ubuntu18.04.1+deb.sury.org+1'
-    response:
-        status:
-            http_version: '1.1'
-            code: '401'
-            message: Unauthorized
-        headers:
-            Cache-Control: no-cache
-            Content-Type: 'application/json; charset=utf-8'
-            Date: 'Fri, 26 Apr 2019 14:11:33 GMT'
-            Expires: '-1'
-            Pragma: no-cache
-            Server: Microsoft-IIS/10.0
-            X-AspNet-Version: 4.0.30319
-            X-Powered-By: ASP.NET
-            Content-Length: '353'
-            Connection: keep-alive
-        body: '{"Info":{"Code":"AuthenticationError","Message":"The account id and service key combination for this region''s endpoint is invalid. Refer to the Developer Center in the Portal for more information on your account''s region and which endpoint to use."},"Value":{"CreditsRemaining":0.0,"CreditsUsed":0.0,"MaximumConcurrentRequests":0,"ExpirationDate":null}}'
