@@ -32,7 +32,7 @@ class SovrenTest extends TestCase
 
     /**
      * @vcr parse_resume.yml
-     * @test
+     *
      */
     public function parse_resume(): void
     {
@@ -46,7 +46,7 @@ class SovrenTest extends TestCase
 
     /**
      * @vcr wrong_account_parse_resume.yml
-     * @test
+     *
      */
     public function wrong_account_parse_resume(): void
     {
