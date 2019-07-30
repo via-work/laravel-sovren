@@ -22,27 +22,16 @@ class Sovren
 
     public function parse(string $resume)
     {
-        try{
-        $response = $this->client->post('parser/resume', [
-            'json' => [
-                'DocumentAsBase64String' => base64_encode($resume)
-            ]
-        ]);
+        try {
+            $response = $this->client->post('parser/resume', [
+                'json' => [
+                    'DocumentAsBase64String' => base64_encode($resume)
+                ]
+            ]);
         } catch (ClientException $e) {
-                return json_decode($e->getResponse()->getBody(), true);
+            return json_decode($e->getResponse()->getBody(), true);
         }
 
-
-        return $this->formatResponse(json_decode($response->getBody()->getContents(), true));
-    }
-
-    protected function formatResponse($response): array
-    {
-        $response = json_decode($response['Value']['ParsedDocument'], true);
-        return [
-          'StructuredXMLResume' => $response['Resume']['StructuredXMLResume'],
-          'NonXMLResume' => $response['Resume']['NonXMLResume'],
-          'UserArea' => $response['Resume']['UserArea'],
-        ];
+        return json_decode($response->getBody()->getContents(), true);
     }
 }
