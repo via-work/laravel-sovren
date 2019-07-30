@@ -3,10 +3,10 @@
 namespace Via\LaravelSovren\Tests;
 
 use GuzzleHttp\Client;
-use Via\LaravelSovren\Facade\Sovren as SovrenFacade;
 use Via\LaravelSovren\Sovren;
 use Orchestra\Testbench\TestCase;
 use Via\LaravelSovren\SovrenServiceProvider;
+use Via\LaravelSovren\Facade\Sovren as SovrenFacade;
 
 class SovrenTest extends TestCase
 {
@@ -39,9 +39,10 @@ class SovrenTest extends TestCase
         $file = file_get_contents('tests/files/resume.pdf');
         $resume = SovrenFacade::parse($file);
 
-
-        $this->assertCount(3, $resume);
-        $this->assertArrayHasKey('StructuredXMLResume', $resume);
+        $this->assertCount(2, $resume);
+        $this->assertArrayHasKey('Info', $resume);
+        $this->assertArrayHasKey('Value', $resume);
+        $this->assertEquals('Success', $resume['Info']['Code']);
     }
 
     /**
