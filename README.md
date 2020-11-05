@@ -7,6 +7,11 @@
 
 Very simple package to use the Sovren API inside Laravel.
 
+## Archived
+
+We are no longer using Sovren in our projects so we can not longer mantain this repo. 
+
+
 ## Installation
 
 You can install the package via composer:
